@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+ font-size: 62.5%;
+}
+
+body {
+  height: 300vh;
+  font-size: 1.6rem;
+  background-color: rgb(237, 244, 255);
+  font-family: "Sofia Sans";
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto 36rem 1fr 45rem;;
+
+}
+
+header {
+  display: grid;
+  grid-template-rows: 16rem 3.8rem
+}
+
+main {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  margin: 0 75px;
+
+  box-shadow: 0 0 30px rgba(200, 200, 200, 0.274);
+}
+
+footer {
+  background-color: #123167;
+}

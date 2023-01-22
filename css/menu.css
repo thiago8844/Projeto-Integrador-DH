@@ -1,0 +1,52 @@
+.menu {
+  background-color: #1a4895;
+  color: white;
+  font-size: 1.99rem;
+  padding: 0 15rem;
+  display: flex;
+  justify-content: center;
+}
+
+.menu a svg {
+  height: 2.2rem;
+  color: white;
+}
+
+.menu a .mouse {
+  color: white;
+  fill: white;
+}
+
+.menu a {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  text-decoration: none;
+  color: white;
+
+  font-size: 2rem;
+
+  padding: 0 3.2rem;
+  border-left: 2px solid #123167;
+}
+
+.menu a:last-child {
+  border-right: 2px solid #123167;
+}
+
+.menu a:hover {
+  background-color: white;
+  color: #1a4895;
+}
+
+.menu a:hover svg {
+  color: #1a4895;
+}
+
+.menu a:hover .mouse {
+  color: #1a4895;
+  fill: #1a4895;
+}
