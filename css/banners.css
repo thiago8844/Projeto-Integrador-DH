@@ -1,4 +1,40 @@
-.banners img {
-  height: 100%;
-  
+.slider-container img{
+  width: 100%;
+}
+
+.slick-track {
+  height: auto;
+}
+.slide-container {
+  position: relative !important;
+  margin: 0 !important;
+
+  display: flex;
+  align-items: center;
+}
+
+/* -=-=- PONTOS -=-=- */
+.slick-dots {
+  position: absolute !important;
+  bottom: 10px;
+
+}
+/* -=-=- Setas -=-=- */
+.slick-arrow, .slick-arrow::before {
+  position: absolute !important;
+  top: 49%;
+  z-index: 100;
+  transform: translateY(-50%);
+
+  font-size: 3rem;
+
+
+}
+
+.slick-prev, .slick-prev::before {
+  left: 15px;
+}
+
+.slick-next, .slick-next::before {
+  right: 15px;
 }
