@@ -1,17 +1,32 @@
+/* -=-=- Container Header -=-=- */
+header {
+  width: 100%;
+  background: rgba(227, 238, 255, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(201, 221, 255, 1) 0%,
+    rgba(227, 238, 255, 1) 8%,
+    rgba(242, 247, 255, 1) 50%,
+    rgba(227, 238, 255, 1) 92%,
+    rgba(188, 213, 255, 1) 100%
+  );
+}
+
 /* -=-=- Nav Bar -=-=-*/
 
 nav {
   height: 160px;
-  
-
-
-
+  width: 100%;
+  max-width: 1920px;
   display: flex;
 
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  padding: 0 140px;
+
+  padding: 0 80px;
+
+  margin: 0 auto;
+
 }
 
 .icon-nav {
@@ -34,7 +49,7 @@ nav .logo {
 /* Barra pesquisa*/
 form {
   background-color: #fff;
-  width: 600px;
+  width: 60rem;
   height: 40px;
 
   display: flex;
@@ -106,6 +121,7 @@ nav a:visited {
 nav a:hover {
   color: #1e51a9;
 }
+
 /* Carrinho e Desejos*/
 .opcoes-nav {
   height: 100%;
@@ -114,4 +130,63 @@ nav a:hover {
   align-items: center;
   justify-content: flex-end;
   gap: 42px;
+}
+
+/*-=-=- Menu -=-=- */
+.menu {
+  height: 38px;
+  background-color: #1a4895;
+  color: white;
+  font-size: 1.99rem;
+  padding: 0 15rem;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.menu a svg {
+  height: 2.2rem;
+  color: white;
+}
+
+.menu a .mouse {
+  color: white;
+  fill: white;
+}
+
+.menu a {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  text-decoration: none;
+  color: white;
+
+  font-size: 2rem;
+
+  padding: 0 3.5rem; 
+  border-left: 2px solid #123167;
+
+}
+
+.menu a:last-child {
+  border-right: 2px solid #123167;
+
+
+}
+
+.menu a:hover {
+  background-color: white;
+  color: #1a4895;
+}
+
+.menu a:hover svg {
+  color: #1a4895;
+}
+
+.menu a:hover .mouse {
+  color: #1a4895;
+  fill: #1a4895;
 }

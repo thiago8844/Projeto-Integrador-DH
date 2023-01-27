@@ -1,0 +1,29 @@
+/* -=-=- Área de ofertas -=-=-*/
+.ofertas {
+  display: grid;
+  grid-template-rows: 7rem 1fr;
+
+}
+
+.ofertas .titulo {
+  background-color: #062f76;
+  display: flex;
+  align-items: center;
+  padding-left: 2.5rem;
+}
+
+.ofertas .titulo h1 {
+  color: white;
+}
+
+/* Container dos anúncios */
+.flex-anuncios{
+  padding: 25px;
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+/* Anúcio em si */
