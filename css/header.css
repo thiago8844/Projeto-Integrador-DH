@@ -1,6 +1,9 @@
+/* DESKTOPS ALTA RESOLUÇÃO*/
+
 /* -=-=- Container Header -=-=- */
 header {
   width: 100%;
+  white-space: nowrap;
   background: rgba(227, 238, 255, 1);
   background: linear-gradient(
     90deg,
@@ -10,6 +13,8 @@ header {
     rgba(227, 238, 255, 1) 92%,
     rgba(188, 213, 255, 1) 100%
   );
+
+
 }
 
 /* -=-=- Nav Bar -=-=-*/
@@ -44,12 +49,19 @@ nav .logo {
   height: 75%;
 }
 
+nav .logo-mobile-texto {
+  display: none;
+}
+
+nav .hamburguer-mobile {
+  display: none;
+}
 
 
 /* Barra pesquisa*/
 form {
   background-color: #fff;
-  width: 60rem;
+  width: 70rem;
   height: 40px;
 
   display: flex;
@@ -189,4 +201,128 @@ nav a:hover {
 .menu a:hover .mouse {
   color: #1a4895;
   fill: #1a4895;
+}
+
+/* -=-=-=- MEDIA QUERIES -=-=-=- */
+
+/* Computadores desktop de resolução média */
+@media (max-width: 1568px) {
+  form {
+    width: 55rem;
+  }
+
+  nav {
+    padding: 0 40px;
+  }
+}
+/* Desktops ou tablets de resolução baixa */
+@media (max-width: 1320px) {
+  .menu a{
+    padding: 0 15px;
+    font-size: 18px;
+  }
+  
+  nav {
+    justify-content: space-between;
+    height: 120px;
+  }
+  
+  form {
+    width: 43rem;
+    height: 36px;
+  }
+
+  .menu a{
+    padding: 0 2.5rem;
+  }
+
+
+  .opcoes-nav {
+    gap: 24px;
+  }
+
+}
+
+/* Tablets e outros dispositivos mobiles */
+@media (max-width: 1080px) {
+  /* Removidos*/
+  nav .logo-container {
+    display: none;
+  }
+  nav .logo {
+    display: none;   
+  }
+  .menu {
+    display: 	none;
+  }
+
+  .user-mensagem {
+    display: none;
+  }
+
+  /* HEADER*/
+  header {
+    background:#0d254e;
+    display: fixed;
+  }
+  
+  /* NAV */
+  nav {
+    height: 80px;
+    width: 100%;
+    justify-content: start;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: auto auto 80% auto;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 12px;
+  }
+  
+
+  /* logo */
+  nav .logo-mobile-texto {
+    display: block;
+    height: 80%;
+    margin: 0 !important;
+  }
+
+  /* Barra de pesquisa */
+  form {
+    width: 100%;
+  }
+  /* ICONES*/
+
+  .container-mobile {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .hamburguer-mobile {
+    display: block !important;
+    height: 35%;
+    color: white;
+  }
+
+  .hamburguer-mobile:hover {
+    cursor: pointer;
+  }
+
+  .desejos {
+    display: none;
+  }
+
+  .carrinho {
+    color: white;
+    height: 35%;
+  }
+}
+
+/* Celulares */
+@media (max-width: 670px) {
+
+
 }
