@@ -49,6 +49,10 @@ nav .logo {
   height: 75%;
 }
 
+/* Elementos mobile */
+nav .container-mobile {
+  display: none;
+}
 nav .logo-mobile-texto {
   display: none;
 }
@@ -260,6 +264,9 @@ nav a:hover {
     display: none;
   }
 
+  .desejos {
+    display: none;
+  }
   /* HEADER*/
   header {
     background:#0d254e;
@@ -296,7 +303,7 @@ nav a:hover {
   }
   /* ICONES*/
 
-  .container-mobile {
+  nav .container-mobile {
     height: 100%;
     display: flex;
     align-items: center;
@@ -310,19 +317,29 @@ nav a:hover {
   .hamburguer-mobile:hover {
     cursor: pointer;
   }
-
-  .desejos {
-    display: none;
-  }
-
   .carrinho {
     color: white;
     height: 35%;
   }
+
+  .slick-arrow {
+    display: none;
+  }
+
 }
 
 /* Celulares */
 @media (max-width: 670px) {
+
+  nav {
+    grid-template-columns: auto auto 60% auto;
+    padding: 5px;
+  }
+
+  nav .logo-mobile-texto {
+    height: 60%;
+  }
+
 
 
 }

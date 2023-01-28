@@ -84,3 +84,27 @@ footer .parte2 .redesocial-container img {
 footer .parte2 .redesocial-container img:hover {
   cursor: pointer;
 }
+
+@media (max-width: 1080px) {
+  footer .parte1 {
+    align-items: start;
+    text-align: center;
+  }
+
+  footer .parte1 ul {
+    margin-top: 80px;
+  }
+  
+  footer .parte1 .titulo {
+    font-size: 16px;
+
+  }
+  
+  footer .parte1 ul a{
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+  footer {
+    height: 65rem;
+  }
+}

@@ -238,6 +238,15 @@
 
 /* Celulares */
 @media (max-width: 670px) {
+  
+  main {
+    width: 100% !important;
+  }
+  
+  main h1 {
+    font-size: 20px;
+  }
+
   .flex-anuncios {
     gap: 0;
     flex-direction: column;

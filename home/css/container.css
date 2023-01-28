@@ -3,7 +3,7 @@
 
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: auto auto auto;
   margin: 0 auto;
 }
 
@@ -25,6 +25,5 @@ main {
 }
 
 footer {
-  height: 60rem;
-
+height: 60rem;
 }
