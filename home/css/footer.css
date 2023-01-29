@@ -56,8 +56,6 @@ footer img {
 
 }
 
-
-
 footer .parte2 {
   
   display: flex;
@@ -86,25 +84,65 @@ footer .parte2 .redesocial-container img:hover {
 }
 
 @media (max-width: 1080px) {
+  
+  /* FOOTER CONTAINER */
+  footer {
+    height: auto;
+    grid-template-rows: 1fr 25%;
+    min-width: 0;
+  }
+  
+  /* PARTE 1 */
   footer .parte1 {
-    align-items: start;
-    text-align: center;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:  2rem;
+    height: auto;
+    padding: 2.4rem 0;
   }
 
   footer .parte1 ul {
-    margin-top: 80px;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    height: auto;
+    width: 100%;
+  }
+
+  footer .parte1 ul li {
+    padding: 0.5rem;
+    border-top: 2px solid #0e264e;
+
+    
+  }
+  footer .parte1 ul li:last-child {
+    border-bottom: 2px solid #0e264e;
   }
   
+  footer .parte1 ul li svg {
+    display: none;
+  }
+
   footer .parte1 .titulo {
     font-size: 16px;
-
+    margin: 1.6rem 0;
   }
   
   footer .parte1 ul a{
     flex-wrap: wrap;
     font-size: 14px;
   }
-  footer {
-    height: 65rem;
+
+  /* PARTE 2*/
+  footer .parte2 p {
+    font-size: 2rem;
+  }
+  footer .parte2 .redesocial-container {
+    gap: 1.2rem;
+  }
+  footer .parte2 .redesocial-container img {
+    height: 3rem;
   }
 }
