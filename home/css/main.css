@@ -185,8 +185,7 @@ main .titulo h1 {
 }
 
 .grid-departamentos {
-  margin-top: 24px;
-  margin-bottom: 24px;
+
   height: 750px;
   padding: 24px;
   display: grid;
