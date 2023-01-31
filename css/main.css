@@ -3,8 +3,8 @@ main {
   width: 90%;
   margin: 72px auto;
 
-  background-color:#7a7a7a13;
-  border-radius: 16px;
+  background-color:#7a7a7a0a;
+  border-radius: 8px;
   max-width: 192rem;  
   display: grid;
   grid-template-columns: 70% 30%;
@@ -139,6 +139,7 @@ main .valor-total button {
   width: 85%;
   box-sizing: initial;
   padding: 10px 15px;
+
   margin-bottom: 15px;
   background: none;
   border: none;
