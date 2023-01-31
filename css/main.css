@@ -1,6 +1,3 @@
-body {
-  background-color: #d2e7fa55;
-}
 
 main {
   width: 90%;
@@ -29,7 +26,7 @@ main .opcoes-pecas .opcao {
 
   border: 2px solid #021027;
   background-color: white;
-
+  
 
   display: flex;
   
@@ -39,10 +36,27 @@ main .opcoes-pecas .opcao .imagem-componente {
   width: 19rem;
   height: 100%;
 
-  background-color: #235fc5;
+  background-color: #1a4895;
   border-right: 2px solid #0c1f41;
+  color: white;
+  font-size: 1.2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
 }
 
+main .opcoes-pecas .opcao .imagem-componente svg {
+  height: 30%;
+}
+
+main .opcoes-pecas .opcao .imagem-componente img {
+
+  height: 30%;
+}
 /* =-=-=- Caixa do valor total -=-=-=- */
 
 main .valor-total {
@@ -50,6 +64,6 @@ main .valor-total {
   height: 180px;
 
   
-  background-color: black;
-  border: white solid 2px;
+  background-color: #ffffff;
+  border: 2px solid #0c1f41;
 }
