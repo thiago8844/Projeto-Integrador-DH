@@ -1,0 +1,55 @@
+body {
+  background-color: #d2e7fa55;
+}
+
+main {
+  width: 90%;
+  margin: 72px auto;
+
+
+  max-width: 192rem;  
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 2.4rem;
+  
+}
+
+/* -=-=-=- Caixa de opcao das peças -=-=-=-*/
+
+main .opcoes-pecas {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-right: 12px;
+}
+
+main .opcoes-pecas .opcao {
+
+  height: 180px;
+
+  border: 2px solid #021027;
+  background-color: white;
+
+
+  display: flex;
+  
+}
+
+main .opcoes-pecas .opcao .imagem-componente {
+  width: 19rem;
+  height: 100%;
+
+  background-color: #235fc5;
+  border-right: 2px solid #0c1f41;
+}
+
+/* =-=-=- Caixa do valor total -=-=-=- */
+
+main .valor-total {
+  grid-column: 2;
+  height: 180px;
+
+  
+  background-color: black;
+  border: white solid 2px;
+}
