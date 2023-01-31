@@ -1,7 +1,7 @@
 .container {
 
   max-width: 1920px;
-
+  
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto;
