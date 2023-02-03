@@ -1,0 +1,49 @@
+.slider-container img {
+  width: 100%;
+  position: relative;
+}
+
+.banners span svg {
+  width: 50px;
+}
+
+/* Cards */
+.card {
+  user-select: none;
+}
+
+/* Corrige bug do carrossel*/
+slick-slider .slick-track,
+.slick-slider .slick-list
+{
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition-delay: 10ms;
+}
+
+/* Movimenta as setas */
+.seta-volta,
+.seta-avanca {
+  z-index: 100;
+  top: 49%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.69);
+}
+.seta-volta:hover,
+.seta-avanca:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.seta-avanca {
+  position: absolute;
+  right: 0;
+}
+
+.seta-volta {
+  position: absolute;
+  left: 0;
+}
