@@ -1,7 +1,7 @@
-'use stric'
+const flex_anuncio = document.querySelector(".area-produtos .flex-anuncios");
 
-const flex_anuncio_ofertas = document.querySelector(".ofertas .flex-anuncios");
-const anuncio_teste = `
+
+const htmlAnuncio = `
 <figure class="caixa-anuncio">
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@ const anuncio_teste = `
 
 <div class="imagem">
   <img
-    src="home/img/imgs-anuncios/pc-gamer-acer-predator-orion-5000-intel-core-i7-11700-rgb-nvidia-geforce-rtx3070-16gb-ram-ssd-1tb-windows-11-home-preto-dg-e2qal-006_1656621177_gg.jpg"
+    src="img/img-produtos/pc-gamer-acer-predator-orion-5000-intel-core-i7-11700-rgb-nvidia-geforce-rtx3070-16gb-ram-ssd-1tb-windows-11-home-preto-dg-e2qal-006_1656621177_gg.jpg"
     alt=""
   />
 </div>
@@ -36,19 +36,13 @@ const anuncio_teste = `
 
 <div class="botao-comprar"><button>COMPRAR</button></div>
 </figure>
-`
-function addAnunc(obj, HTML) {
-  obj.insertAdjacentHTML("afterbegin", HTML);
-}
+`;
 
-function removeAnunc(obj, HTML) {
-
-}
-
-window.addEventListener("keydown", (event) => {
-  if(event.key === "F8") {
-    flex_anuncio_ofertas.insertAdjacentHTML("afterbegin", anuncio_teste);
-    console.log(flex_anuncio_ofertas.childNodes.length / 3);
+window.addEventListener("keydown", (evento) => {
+  if(evento.key === 'F8') {
+    flex_anuncio.insertAdjacentHTML("afterbegin", htmlAnuncio);
   }
 })
 
+for(let c = 0; c < 32; c++)
+  flex_anuncio.insertAdjacentHTML("afterbegin", htmlAnuncio);
