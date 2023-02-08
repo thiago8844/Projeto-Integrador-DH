@@ -50,7 +50,7 @@ body{
 }
 
 .formHeader{
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
 }
@@ -87,12 +87,13 @@ label {
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
     outline: none;
+    transition: 1s;
 }
 
 .inputbox input:hover{
     background-color: #a4cdef;
     outline: none;
-    transition: 1.5s;
+
 }
 
 .signupClick {
@@ -111,11 +112,11 @@ label {
     border-radius: 5px;
     cursor: pointer;
     border: none;
+    transition: 1s;
 }
 
 .loginButton button:hover{
     background-color: #176ec0;
-    transition: 1.5s;
 }
 
 .loginButton button a {
@@ -123,11 +124,11 @@ label {
     font-size: 0.9rem;
     font-weight: 500;
     color: #a4cdef;
+    transition: 1s;
 }
 
 .loginButton button a:hover{
     color: #ffff;
-    transition: 1s;
 }
 
 /*     responsividade       */
