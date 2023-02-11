@@ -1,6 +1,7 @@
 'use stric'
 
 const flex_anuncio_ofertas = document.querySelector(".ofertas .flex-anuncios");
+const flex_anuncio_mv = document.querySelector(".mais-vendidos .flex-anuncios");
 const anuncio_teste = `
 <figure class="caixa-anuncio">
 <svg
@@ -37,9 +38,7 @@ const anuncio_teste = `
 <div class="botao-comprar"><button>COMPRAR</button></div>
 </figure>
 `
-function addAnunc(obj, HTML) {
-  obj.insertAdjacentHTML("afterbegin", HTML);
-}
+console.log(flex_anuncio_mv);
 
 function removeAnunc(obj, HTML) {
 
@@ -48,7 +47,13 @@ function removeAnunc(obj, HTML) {
 window.addEventListener("keydown", (event) => {
   if(event.key === "F8") {
     flex_anuncio_ofertas.insertAdjacentHTML("afterbegin", anuncio_teste);
-    console.log(flex_anuncio_ofertas.childNodes.length / 3);
+  }
+
+  if(event.key === "F9") {
+    flex_anuncio_mv.insertAdjacentHTML("afterbegin", anuncio_teste)
   }
 })
 
+
+for(let c = 0; c < 10; c++) flex_anuncio_ofertas.insertAdjacentHTML("afterbegin", anuncio_teste);
+for(let c = 0; c < 10; c++) flex_anuncio_mv.insertAdjacentHTML("afterbegin", anuncio_teste);

@@ -22,7 +22,7 @@
   max-width: 19%;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.071);
   border: 1px solid rgba(138, 138, 138, 0.252);
-
+  background-color: white;
   border-radius: 5px;
   display: grid;
   grid-template-rows: 200px auto auto;
@@ -145,7 +145,7 @@
 /* -=-=-=- MEDIA QUERIES -=-=-=- */
 
 /* Computadores desktop de resolução média */
-@media (max-width: 1568px) {
+@media (max-width: 1750px) {
   .flex-anuncios {
     gap: calc(4% / 4 + 4% / 12);
   }
