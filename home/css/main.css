@@ -231,6 +231,7 @@ main .titulo svg {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(2, 50%);
+  background-color: rgb(250, 250, 250);
 }
 .grid-departamentos .dep {
   padding: 12px;
