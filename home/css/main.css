@@ -224,6 +224,11 @@ main .titulo svg {
 
 }
 
+.departamentos .titulo svg {
+  margin-bottom: 1px;
+  height: 55%;
+}
+
 .grid-departamentos {
 
   height: 750px;
