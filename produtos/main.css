@@ -1,7 +1,7 @@
 /* -=-=- Área geral -=-=-*/
 main {
   width: 95%;
-
+  max-width: 1920px;
 
 
   margin: 0 auto;
@@ -61,12 +61,23 @@ main .header-filtros {
   padding: 0 24px;
 
   border-bottom: 1px solid rgb(212, 212, 212);
-  background-color: white;
+  background-color: #fdfdfd;
 }
 
 main .area-produtos {
   grid-row: 2;
   grid-column: 2 / -1;
-  background-color: white;
+  background-color: #fdfdfd;
 }
 
+/* Lista paginação */
+.lista-paginas {
+  height: 32px;
+  width: 200px;
+  background-color: rgb(245, 14, 14);
+  margin: 48px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}

@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
     />
-    <title>Carrinho - Tech Star | Os Melhores produtos do mercado</title>
+    <title>Carrinho - teste1</title>
     <link rel="stylesheet" href="compra.css" />
   </head>
   <body>
@@ -20,11 +20,44 @@
           <span>TOTAL</span>
         </div>
         <div class="produto">NÃO HÁ PRODUTO PARA COMPRA</div>
+
+        <button class="botao-compartilhar">
+          <span>Compartilhar</span>
+        </button>
+
+        <button class="botao-comprando">
+          <span>Continuar comprando</span>
+        </button>
       </div>
-      <div class="total-avista">
-        <span>Total à Vista</span>
-        <span>R$ 0,00</span>
-        <span>Frete</span>
+
+      <div class="container2">
+        <div class="sidebar">
+          <div class="head">Meu Carrinho</div>
+          <div id="carItem">Frete: ?</div>
+
+          <label for="cupom">Cupom</label>
+          <!--se eu nao gostar eu apago-->
+          <form action="" class="area-cupom">
+            <input
+              type="text"
+              id="cupom"
+              name="cupom"
+              placeholder="Desconto"
+              required
+            />
+            <button class="cupom-desconto">
+              <span>Aplicar</span>
+            </button>
+          </form>
+          <div class="foot">
+            <h3>Total</h3>
+            <h2 id="total">R$ 0,00</h2>
+          </div>
+
+          <button class="botao-compra">
+            <span>Finalizar Compra</span>
+          </button>
+        </div>
       </div>
     </div>
   </body>
