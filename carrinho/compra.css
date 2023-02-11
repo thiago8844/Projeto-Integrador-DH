@@ -1,0 +1,174 @@
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+
+
+  }
+
+  .container {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+
+    margin: 100px auto;
+  }
+
+  .container2 {
+    width: 330px;
+    color: beige;
+        
+    
+  }
+  .cabecalho {
+    display: flex;
+    height: 70px;
+    width: 700px;
+    background-color: rgb(255, 249, 250);
+    border-bottom: 1px solid #a6a5a5;
+    border-top: 1px solid #a6a5a5;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    flex-direction: row;
+  }
+  .produto {
+    display: flex;
+    height: 150px;
+    width: 700px;
+
+    background-color: rgb(255, 249, 250);
+    border-bottom: 1px solid #a6a5a5;
+    justify-content: center;
+
+    align-items: center;
+  }
+
+
+  .sidebar {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #08f;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    text-align: center;
+    gap: 12px;
+    ;
+  }
+  .head {
+    background-color: rgb(93, 70, 184);
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+
+    align-items: center;
+    width: 100%;
+  }
+  .foot {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 1px solid #333;
+  }
+
+  .botao-compra {
+    color: white;
+    background-color: rgb(48, 104, 187);
+    border: 1px solid rgb(232, 50, 50);
+
+    height: 30px;
+    width: 200px;
+    font-size: 14px;
+    padding: 0;
+
+    
+    justify-content: center;
+    border-radius: 5px !important;
+    cursor: pointer;
+    align-items: center;
+    cursor: pointer; /*QUANDO PASSAR O MOUSE POR CIMA VIRAR UMA MAOZINHA*/
+  }
+
+  .botao-compartilhar {
+    color: white;
+    background-color: rgb(33, 67, 124);
+    border: 1px solid rgb(68, 90, 204);
+
+    height: 25px;
+    width: 244px;
+    font-size: 14px;
+    padding: 0;
+
+    
+    justify-content: center;
+    border-radius: 5px !important;
+    cursor: pointer;
+    align-items: flex-end;
+  }
+
+  .botao-comprando {
+    background-color: rgb(33, 67, 124);
+    border: 1px solid rgb(68, 90, 204);
+    color: white;
+    height: 25px;
+    width: 244px;
+    font-size: 14px;
+    padding: 0;
+
+    
+    justify-content: center;
+    border-radius: 5px !important;
+    cursor: pointer;
+    align-items: flex-end;
+  }
+  .botao-compra {
+    color: white;
+    background-color: rgb(232, 50, 50);
+    border: 1px solid rgb(232, 50, 50);
+
+    height: 30px;
+    width: 200px;
+    font-size: 14px;
+    padding: 0;
+    align-self: center;
+    
+    justify-content: center;
+    border-radius: 5px !important;
+    cursor: pointer;
+    align-items: center;
+    cursor: pointer; /*QUANDO PASSAR O MOUSE POR CIMA VIRAR UMA MAOZINHA*/
+  }
+  .cupom-desconto {
+    /*Posso apagar quando eu quiser*/
+    color: white;
+    background-color: rgb(33, 67, 124);
+    border: 1px solid rgb(68, 90, 204);
+    color: white;
+    height: 25px;
+    width: 94px;
+    font-size: 14px;
+
+
+    
+    justify-content: center;
+    border-radius: 5px !important;
+    cursor: pointer;
+    align-items: flex-end;
+  }
+
+  .area-cupom {
+    display: flex;
+    justify-content: center;
+
+
+  }
+
+.carItem{
+
+}
