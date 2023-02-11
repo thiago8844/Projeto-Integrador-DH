@@ -236,11 +236,11 @@ main .titulo svg {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(2, 50%);
-  background-color: rgb(250, 250, 250);
+  background-color:white;
 }
 .grid-departamentos .dep {
   padding: 12px;
-  background-color: white;
+
 
 }
 .grid-departamentos .dep .dep-flex {
