@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Montserrat, sans-serif;
 
 
   }
@@ -10,9 +9,10 @@
   .container {
     display: flex;
     gap: 28px;
-    justify-content: center;
 
+    justify-content: center;
     margin: 100px auto;
+
   }
 
   .container2 {
@@ -24,7 +24,7 @@
   .cabecalho {
     display: flex;
     height: 70px;
-    width: 700px;
+    width: 1200px;
     background-color: rgb(255, 249, 250);
     border-bottom: 1px solid #a6a5a5;
     border-top: 1px solid #a6a5a5;
@@ -37,7 +37,7 @@
   .produto {
     display: flex;
     height: 150px;
-    width: 700px;
+
 
     background-color: rgb(255, 249, 250);
     border-bottom: 1px solid #a6a5a5;
@@ -105,13 +105,16 @@
     font-size: 14px;
     padding: 0;
 
-    
+     
     justify-content: center;
     border-radius: 5px !important;
     cursor: pointer;
     align-items: flex-end;
   }
-
+.cachola-botoes {
+  display: flex;
+  justify-content: space-between;
+}
   .botao-comprando {
     background-color: rgb(33, 67, 124);
     border: 1px solid rgb(68, 90, 204);
@@ -143,6 +146,14 @@
     cursor: pointer;
     align-items: center;
     cursor: pointer; /*QUANDO PASSAR O MOUSE POR CIMA VIRAR UMA MAOZINHA*/
+  }
+
+  .botao-compartilhar, .botao-comprando {
+    margin-top: 3.2rem;
+    padding: 15px;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
   }
   .cupom-desconto {
     /*Posso apagar quando eu quiser*/
