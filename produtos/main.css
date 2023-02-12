@@ -107,13 +107,3 @@ main .area-produtos {
 }
 
 /* Lista paginação */
-.lista-paginas {
-  height: 32px;
-  width: 200px;
-  background-color: rgb(245, 14, 14);
-  margin: 48px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px;
-}
