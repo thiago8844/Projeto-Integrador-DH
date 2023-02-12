@@ -27,10 +27,11 @@ body {
 
 .container {
   display: grid;
+  position: relative;
   grid-template-columns: 80px 1fr 1fr;
   grid-template-rows: 100px 1fr;
   width: 1200px;
-  height: 800px;
+  height: 550px;
   margin: 50px auto;
   background-color: white;
 }
@@ -49,8 +50,8 @@ h1 {
 }
 
 .btn {
-  display: inline-block;
-  padding: 15px 138px;
+  display: flex;
+  padding: 10px 210px;
   font-size: 16px;
   font-weight: 500;
   background: transparent;
@@ -58,13 +59,17 @@ h1 {
   background-color: #c6131c;
   transition: all.55 ease;
   color: #fff;
+  justify-content: center;
+  gap: 6px;
+  align-items: center;
 }
 
 .home-text svg {
   width: 20px;
 }
 .main {
-  padding: 40px 0;
+  padding: 40px 0px;
+  margin: 0px 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -73,9 +78,14 @@ h1 {
 }
 
 .main li img {
-  width: 50px;
+  width: 100%;
   height: auto;
   max-width: 100%;
+  border: 1px solid #c1c1c1;
+}
+
+.main li img:hover {
+  border: 2px solid black;
 }
 
 .row {
@@ -89,10 +99,6 @@ h1 {
   display: inline-flex;
 }
 
-.row:hover {
-  transform: translateY(-8px);
-}
-
 .row2 {
   height: 70px;
   width: 70px;
@@ -104,10 +110,6 @@ h1 {
   transition: all.55s ease;
 }
 
-.row2:hover {
-  transform: translateY(-8px);
-}
-
 .row3 {
   height: 70px;
   width: 70px;
@@ -117,13 +119,6 @@ h1 {
   justify-content: center;
   cursor: pointer;
   transition: all.55s ease;
-}
-
-.row3:hover {
-  transform: translateY(-8px);
-}
-
-.home-cep {
 }
 
 .button-cep {
@@ -157,9 +152,19 @@ h1 {
   flex-direction: column;
   padding: 20px;
   line-height: 130%;
-  font-size: ;
+  margin-bottom: 100px;
 }
 .container-descricao h3 {
   text-align: center;
   margin: 10px 0;
+}
+.coracao_h3 {
+  position: absolute;
+  right: 30px;
+  top: 100px;
+}
+
+.coracao_h3:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
 }
