@@ -63,7 +63,7 @@ nav .hamburguer-mobile {
 
 
 /* Barra pesquisa*/
-form {
+header form {
   background-color: #fff;
   width: 70rem;
   height: 40px;
@@ -77,7 +77,7 @@ form {
   box-shadow: 0px 0px 10px rgba(81, 81, 81, 0.274);
 }
 
-form > * {
+header form > * {
   border-radius: 10px;
 }
 
@@ -85,7 +85,7 @@ form > * {
   height: 100%;
 }
 
-form input {
+header form input {
   flex-grow: 1;
   border: none;
   outline: none;
@@ -93,7 +93,7 @@ form input {
   font-size: 17px;
 }
 
-form button {
+header form button {
   border: none;
   background-color: white;
 
@@ -101,7 +101,7 @@ form button {
   align-items: center;
 }
 
-form button .icone-pesquisa {
+header form button .icone-pesquisa {
   stroke: #1a4895;
   stroke-width: 7%;
   height: 70%;
@@ -218,7 +218,7 @@ nav a:hover {
 
 /* Computadores desktop de resolução média */
 @media (max-width: 1568px) {
-  form {
+  header form {
     width: 55rem;
   }
 
@@ -238,7 +238,7 @@ nav a:hover {
     height: 120px;
   }
   
-  form {
+  header form {
     width: 43rem;
     height: 36px;
   }
@@ -271,7 +271,7 @@ nav a:hover {
     display: none;
   }
 
-  .desejos {
+  .desejos, .link-desejos {
     display: none;
   }
   /* HEADER*/
@@ -303,7 +303,7 @@ nav a:hover {
   }
 
   /* Barra de pesquisa */
-  form {
+  header form {
     height: 3.6rem;
     width: calc(100vw - 15.75rem);
 
@@ -311,7 +311,7 @@ nav a:hover {
     min-width: auto;
   }
 
-  input {
+  header input {
     min-height: auto;
     min-width: 0;
   }
