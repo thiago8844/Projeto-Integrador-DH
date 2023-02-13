@@ -33,10 +33,10 @@ main .filtros-produtos {
 }
 
 main .filtros-produtos .filtro {
-  background-color: #1a4895;
-  color: white;
-  text-align: center;
-  font-size: 22px;
+
+  color: rgb(0, 0, 0);
+
+  font-size: 19px;
   font-weight: 600;
   padding: 20px 10px;
 
@@ -47,6 +47,12 @@ main .filtros-produtos .filtro {
 main .filtros-produtos .filtro:last-child {
   border-bottom: 2px solid black;
 }
+
+main .filtros-produtos form {
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* Header Filtros*/
 main .header-filtros {

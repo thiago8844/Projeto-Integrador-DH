@@ -128,11 +128,11 @@ nav .user {
 nav a {
   font-weight: 700;
   text-decoration: none;
-  color: black;
+  color: rgb(37, 37, 37);
 }
 
 nav a:visited {
-  color: black;
+  color: rgb(37, 37, 37);
 }
 
 nav a:hover {
@@ -148,7 +148,12 @@ nav a:hover {
   justify-content: flex-end;
   gap: 42px;
 }
-
+.opcoes-nav svg {
+  height: 32px;
+}
+.opcoes-nav a {
+  width: auto;
+}
 /*-=-=- Menu -=-=- */
 .menu {
   height: 38px;

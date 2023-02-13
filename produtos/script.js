@@ -44,5 +44,5 @@ window.addEventListener("keydown", (evento) => {
   }
 })
 
-for(let c = 0; c < 32; c++)
+for(let c = 0; c < 35; c++)
   flex_anuncio.insertAdjacentHTML("afterbegin", htmlAnuncio);

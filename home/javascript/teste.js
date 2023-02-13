@@ -3,7 +3,7 @@
 const flex_anuncio_ofertas = document.querySelector(".ofertas .flex-anuncios");
 const flex_anuncio_mv = document.querySelector(".mais-vendidos .flex-anuncios");
 const anuncio_teste = `
-<figure class="caixa-anuncio">
+<a class="caixa-anuncio" href="produtos/produtos.html">
 <svg
   xmlns="http://www.w3.org/2000/svg"
   fill="none"
@@ -36,7 +36,7 @@ const anuncio_teste = `
 </div>
 
 <div class="botao-comprar"><button>COMPRAR</button></div>
-</figure>
+</a>
 `
 console.log(flex_anuncio_mv);
 

@@ -31,6 +31,10 @@ main .titulo svg {
   stroke-width: 2px;
 
 }
+
+main a {
+  text-decoration: none;
+}
 /* Container dos anúncios */
 .flex-anuncios{
   
