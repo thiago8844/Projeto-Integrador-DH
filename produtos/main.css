@@ -14,41 +14,88 @@ main {
   column-gap: 20px;
 }
 
-/* -=-=- Área dos produtos -=-=- */
 
-/* Filtros Produtos*/
+/* -=-=-=- Filtros Produtos -=-=-=- */
 main .filtros-produtos {
   grid-row: 1 / -1;
   grid-column: 1;
 
+  background-color: rgba(255, 255, 255, 0.603);
+  border-radius: 5px;
+
+  padding: 16px 12px;
+
+}
+
+
+
+
+.filtros-produtos h2 {
+  color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 22px;
+
+  margin-bottom: 18px;
+
+}
+.filtros-produtos h2 svg {
+  width: 24px;
+  color: rgb(16, 55, 92);
+}
+
+/* Filtro de preco*/
+.filtros-produtos  .filtro-preco h4 {
+  color: rgb(73, 73, 73);
+  height: 14px;
+  margin: 16px 0;
+}
+
+.filtros-produtos  .filtro-preco .range-slider {
+  width: 100%;
+}
+
+/* outros filtros*/
+.filtros-produtos details {
+
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(170, 170, 170, 0.432);
+  border-top: 1px solid rgba(170, 170, 170, 0.432);
+}
+.filtros-produtos details summary {
+  font-size: 18px;
+  color: rgb(73, 73, 73);
+  font-weight: 600;
+
+  padding: 4px 0 ;
+
+  padding-left: 16px;
+  padding-right: 20px;
 
   display: flex;
+  justify-content: space-between;
+}
+
+.filtros-produtos details summary svg {
+  width: 2.2rem;
+  color: rgb(16, 55, 92);
+}
+.filtros-produtos details form {
+  display: flex;
   flex-direction: column;
-  gap: 12px;
-
-  padding: 12px;
-
-  background-color: #adcbff5b;
-  border-radius: 6px;
+  gap: 5px;
+  padding: 4px 24px;
 }
 
-main .filtros-produtos .filtro {
-  background-color: #1a4895;
-  color: white;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 600;
-  padding: 20px 10px;
-
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-
-}
-main .filtros-produtos .filtro:last-child {
-  border-bottom: 2px solid black;
+.filtros-produtos details form label {
+  display: flex;
+  gap: 5px;
 }
 
-/* Header Filtros*/
+
+
+/* -=-=-=-  Header Filtros -=-=-=-*/
 main .header-filtros {
   grid-row: 1;
   grid-column: 2 / -1;
