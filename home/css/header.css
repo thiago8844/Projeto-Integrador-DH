@@ -65,9 +65,9 @@ nav .hamburguer-mobile {
 /* Barra pesquisa*/
 header form {
   background-color: #fff;
-  width: 70rem;
+  width: calc(100vw - 100rem);
   height: 40px;
-
+  max-width: 80rem;
   display: flex;
   border: 2px solid #1a4895;
   border-radius: 5px;
@@ -148,9 +148,11 @@ nav a:hover {
   justify-content: flex-end;
   gap: 42px;
 }
+
 .opcoes-nav svg {
   height: 32px;
 }
+
 .opcoes-nav a {
   width: auto;
 }
@@ -214,12 +216,16 @@ nav a:hover {
   fill: #1a4895;
 }
 
+/* sub menus */
+
+
 /* -=-=-=- MEDIA QUERIES -=-=-=- */
 
 /* Computadores desktop de resolução média */
 @media (max-width: 1568px) {
   header form {
-    width: 55rem;
+    width: calc(100vw - 82rem);
+    max-width: 70rem;
   }
 
   nav {
@@ -239,7 +245,8 @@ nav a:hover {
   }
   
   header form {
-    width: 43rem;
+    width: calc(100vw - 72rem);
+    max-width: 60rem;
     height: 36px;
   }
 
@@ -281,6 +288,12 @@ nav a:hover {
   }
   
   /* NAV */
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+  }
+  
   nav {
     height: auto;
     width: 100%;
@@ -305,10 +318,9 @@ nav a:hover {
   /* Barra de pesquisa */
   header form {
     height: 3.6rem;
-    width: calc(100vw - 15.75rem);
-
-    min-height: auto;
-    min-width: auto;
+    width: calc(100vw - 16.8rem);
+    max-width: 91rem;
+    max-width: none;
   }
 
   header input {
@@ -324,17 +336,24 @@ nav a:hover {
   }
   .hamburguer-mobile {
     display: block !important;
-    height: 2.4rem;
+    height: 3rem;
     color: white;
   }
 
   .hamburguer-mobile:hover {
     cursor: pointer;
   }
+  
+  .link-carrinho {
+    height: 35%;
+    display: flex;
+    align-items: center;
+  }
+
   .carrinho {
     color: white;
-    height: 35%;
-    height: 2.4rem;
+    height: 2.8rem !important;
+
   }
 
   .slick-arrow {

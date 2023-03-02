@@ -315,6 +315,10 @@ main a {
 
 /* Tablets e outros dispositivos mobiles */
 @media (max-width: 1077px) {
+  .container {
+    margin-top: 60px !important;
+  }
+  
   .flex-anuncios {
     gap: calc(2% / 2 + 1%);
   }
@@ -358,7 +362,7 @@ main a {
 @media (max-width: 670px) {
   
   main {
-    width: 100% !important;
+    width: 95% !important;
   }
   
   main h1 {
