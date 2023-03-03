@@ -38,7 +38,6 @@ const anuncio_teste = `
 <div class="botao-comprar"><button>COMPRAR</button></div>
 </a>
 `;
-console.log(flex_anuncio_mv);
 
 function removeAnunc(obj, HTML) {}
 
