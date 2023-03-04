@@ -1,6 +1,4 @@
-/* DESKTOPS ALTA RESOLUÇÃO*/
-
-/* -=-=- Container Header -=-=- */
+/* -=-=- Container Header -=-=-*/
 header {
   width: 100%;
   white-space: nowrap;
@@ -13,8 +11,6 @@ header {
     rgba(227, 238, 255, 1) 92%,
     rgba(188, 213, 255, 1) 100%
   );
-
-
 }
 
 /* -=-=- Nav Bar -=-=-*/
@@ -33,6 +29,14 @@ nav {
   margin: 0 auto;
 
 }
+
+nav .user { 
+  height: 10%; 
+  stroke: #1a4895; 
+  stroke-width: 3px; 
+  color:#1a4895 ; 
+  border: 2px solid #1a4895; 
+  border-radius: 20000px; } 
 
 .icon-nav {
   height: 20%;
@@ -61,99 +65,31 @@ nav .hamburguer-mobile {
   display: none;
 }
 
-
-/* Barra pesquisa*/
-header form {
-  background-color: #fff;
-  width: 70rem;
-  height: 40px;
-
+.user-id {
   display: flex;
-  border: 2px solid #1a4895;
-  border-radius: 5px;
-
-  padding-left: 12px;
-  padding-right: 16px;
-  box-shadow: 0px 0px 10px rgba(81, 81, 81, 0.274);
-}
-
-header form > * {
-  border-radius: 10px;
-}
-
-.icone-pesquisa {
-  height: 100%;
-}
-
-header form input {
-  flex-grow: 1;
-  border: none;
-  outline: none;
-  font-family: Sofia Sans;
-  font-size: 17px;
-}
-
-header form button {
-  border: none;
-  background-color: white;
-
-  display: flex;
+  gap: 0 20px;
   align-items: center;
 }
 
-header form button .icone-pesquisa {
-  stroke: #1a4895;
-  stroke-width: 7%;
-  height: 70%;
-  cursor: pointer;
+.user-icon{
+  width: 50px;
 }
 
-/* Flexbox usuário */
-.user-mensagem {
-  width: 170px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  height: 35%;
+.user-txt{
+  line-height: 18px;
 }
 
-nav .user {
-  height: 80%;
-  stroke: #1a4895;
-  stroke-width: 3px;
-  border: 2px solid #1a4895;
-  border-radius: 20000px;
-}
-
-nav a {
-  font-weight: 700;
+.user-txt a{
   text-decoration: none;
-  color: rgb(37, 37, 37);
 }
 
-nav a:visited {
-  color: rgb(37, 37, 37);
+.user-txt p{
+  font-size: 17px;
+  text-align: center;
 }
 
-nav a:hover {
-  color: #1e51a9;
-}
 
-/* Carrinho e Desejos*/
-.opcoes-nav {
-  height: 100%;
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 42px;
-}
-.opcoes-nav svg {
-  height: 32px;
-}
-.opcoes-nav a {
-  width: auto;
-}
+
 /*-=-=- Menu -=-=- */
 .menu {
   height: 38px;
