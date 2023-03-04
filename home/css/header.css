@@ -65,9 +65,9 @@ nav .hamburguer-mobile {
 /* Barra pesquisa*/
 header form {
   background-color: #fff;
-  width: 70rem;
+  width: calc(100vw - 100rem);
   height: 40px;
-
+  max-width: 80rem;
   display: flex;
   border: 2px solid #1a4895;
   border-radius: 5px;
@@ -148,9 +148,11 @@ nav a:hover {
   justify-content: flex-end;
   gap: 42px;
 }
+
 .opcoes-nav svg {
   height: 32px;
 }
+
 .opcoes-nav a {
   width: auto;
 }
@@ -164,62 +166,140 @@ nav a:hover {
   display: flex;
   justify-content: center;
   white-space: nowrap;
+}
+
+.menu > li {
+  position: relative;
+  border-left: 2px solid #123167;
+  transition: var(--transition-principal);
 
 }
 
-.menu a svg {
+.menu > li > a > svg {
   height: 2.2rem;
   color: white;
 }
 
-.menu a .mouse {
+.menu > li > a .mouse {
   color: white;
   fill: white;
 }
 
-.menu a {
+.menu > li > a {
   height: 100%;
-
   display: flex;
   align-items: center;
   gap: 6px;
-
   text-decoration: none;
   color: white;
-
   font-size: 2rem;
-
   padding: 0 3.5rem; 
-  border-left: 2px solid #123167;
 
 }
 
-.menu a:last-child {
-  border-right: 2px solid #123167;
+.menu > li:last-child {
+  border-right: 2px solid  #123167;
+}
 
+.menu > li:hover {
+  /* background-color:rgb(251, 253, 255);
+  color: #1a4895; */
+
+  background-color:#123167;  
+}
+
+.menu > li > a:hover svg {
 
 }
 
-.menu a:hover {
-  background-color: white;
-  color: #1a4895;
+
+/* sub menu */
+
+.sub-menu {
+  display: none;
+  background-color:rgb(251, 253, 255);
+  z-index: 99999;
+  position: absolute;
+  width: 100%;
+
+  box-sizing: content-box;
+  box-shadow: -2px 5px 11px 0px rgba(66, 66, 66, 0.288);
+  padding: 16px 1px;
+  font-size: 18px;
+
+  transition: opacity var(--transition-principal);
+  opacity: 0.5; 
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-.menu a:hover svg {
-  color: #1a4895;
+
+
+
+.sub-menu > li {
+  display: flex;
 }
 
-.menu a:hover .mouse {
-  color: #1a4895;
-  fill: #1a4895;
+.sub-menu > li:hover {
+  background-color: rgb(224, 232, 255);
 }
+
+.sub-menu > li a {
+  color: rgb(44, 44, 44);
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  justify-content: space-between;
+}
+
+.sub-menu > li > a > svg {
+  width: 16px;
+}
+
+/* sub-menu_2 */
+
+.sub-menu_2 {
+  display: none;
+  position: absolute;
+  width: 135%;
+  height: 100%;
+  left: 96%;
+  top: 0;
+  background-color: #f1f1f1;
+  z-index: 2;
+  box-shadow: 6px 5px 11px 0px rgba(66, 66, 66, 0.288);
+  border-bottom-right-radius: 5px;
+  padding: 25px 0;
+  font-size: 16px;
+
+  transition: 0.5s;
+}
+
+
+.sub-menu_2 > li a {
+  padding: 6px 25px;
+}
+
+.sub-menu_2 > li a:hover {
+  background-color: #e6e6e6;
+
+}
+
+.sub-menu > li:hover .sub-menu_2 {
+
+}
+
 
 /* -=-=-=- MEDIA QUERIES -=-=-=- */
 
 /* Computadores desktop de resolução média */
 @media (max-width: 1568px) {
   header form {
-    width: 55rem;
+    width: calc(100vw - 82rem);
+    max-width: 70rem;
   }
 
   nav {
@@ -228,8 +308,8 @@ nav a:hover {
 }
 /* Desktops ou tablets de resolução baixa */
 @media (max-width: 1320px) {
-  .menu a{
-    padding: 0 15px;
+  .menu li a{
+    padding: 0 24px;
     font-size: 18px;
   }
   
@@ -239,7 +319,8 @@ nav a:hover {
   }
   
   header form {
-    width: 43rem;
+    width: calc(100vw - 72rem);
+    max-width: 60rem;
     height: 36px;
   }
 
@@ -281,6 +362,12 @@ nav a:hover {
   }
   
   /* NAV */
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+  }
+  
   nav {
     height: auto;
     width: 100%;
@@ -305,10 +392,9 @@ nav a:hover {
   /* Barra de pesquisa */
   header form {
     height: 3.6rem;
-    width: calc(100vw - 15.75rem);
-
-    min-height: auto;
-    min-width: auto;
+    width: calc(100vw - 16.8rem);
+    max-width: 91rem;
+    max-width: none;
   }
 
   header input {
@@ -324,17 +410,24 @@ nav a:hover {
   }
   .hamburguer-mobile {
     display: block !important;
-    height: 2.4rem;
+    height: 3rem;
     color: white;
   }
 
   .hamburguer-mobile:hover {
     cursor: pointer;
   }
+  
+  .link-carrinho {
+    height: 35%;
+    display: flex;
+    align-items: center;
+  }
+
   .carrinho {
     color: white;
-    height: 35%;
-    height: 2.4rem;
+    height: 2.8rem !important;
+
   }
 
   .slick-arrow {
