@@ -193,7 +193,7 @@ nav a:hover {
   text-decoration: none;
   color: white;
   font-size: 2rem;
-  padding: 0 3.5rem; 
+  padding: 3.5rem; 
 
 }
 
@@ -220,7 +220,7 @@ nav a:hover {
   background-color:rgb(251, 253, 255);
   z-index: 99999;
   position: absolute;
-  width: 100%;
+  width: 250px;
 
   box-sizing: content-box;
   box-shadow: -2px 5px 11px 0px rgba(66, 66, 66, 0.288);
@@ -308,8 +308,8 @@ nav a:hover {
 }
 /* Desktops ou tablets de resolução baixa */
 @media (max-width: 1320px) {
-  .menu li a{
-    padding: 0 24px;
+  .menu > li a{
+    padding: 6px 24px;
     font-size: 18px;
   }
   
