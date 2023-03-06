@@ -107,6 +107,7 @@ label {
     width: 100%;
     margin-top: 2.5rem;
     background-color: #0e5291;
+    color: #a4cdef;
     padding: 0.6rem;
     border-radius: 5px;
     cursor: pointer;
@@ -116,19 +117,9 @@ label {
 
 .loginButton button:hover{
     background-color: #176ec0;
-}
-
-.loginButton button a {
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #a4cdef;
-    transition: 1s;
-}
-
-.loginButton button a:hover{
     color: #ffff;
 }
+
 
 /*     responsividade       */
 

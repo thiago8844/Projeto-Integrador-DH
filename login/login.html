@@ -12,7 +12,7 @@
         <div class="img">
             <a href="../index.html"><img src="../carrinho/img/logo 2 degradê+texto sem BG.svg"></a> 
         </div>
-        <div class="formLogin">
+        <div class="formLogin" id="formLogin">
             <form action="#">
                 <div class="formHeader">
                     <div class="title">
@@ -23,11 +23,11 @@
                 <div class="inputs">
                     <div class="inputbox">
                         <label for="email">Email:</label>
-                        <input id="email" type="email" placeholder="Digite seu email" required>
+                        <input id="email" type="email" placeholder="Digite seu email">
                     </div>
                     <div class="inputbox">
                         <label for="password">Senha:</label>
-                        <input id="password" type="password" placeholder="Digite sua senha" required>
+                        <input id="password" type="password" placeholder="Digite sua senha">
                     </div>
                 </div>
 
@@ -36,10 +36,12 @@
                 </div>
 
                 <div class="loginButton">
-                    <button><a href="#">Entrar</a></button>
+                    <button type="submit" id="loginButton">Entrar</button>
                 </div>
+                <div class="msg"></div>
             </form>
         </div>
     </div>
+    <script src="login.js"></script>
 </body>
 </html>
