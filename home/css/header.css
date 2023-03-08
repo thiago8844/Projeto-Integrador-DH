@@ -212,7 +212,9 @@ nav a:hover {
 
 }
 
-
+.menu-dep {
+  cursor:  default;
+}
 /* sub menu */
 
 .sub-menu {

@@ -1,15 +1,13 @@
-
-cupom.addEventListener('change', function(){
-    console.log(cupom.value)
-  })
  
- 
-window.addEventListener('load', function() {
-
- const formulario = document.querySelector('form')
-
+const formulario = document.querySelector('.area-cupom')
+const total = document.querySelector("#total-valor");
+console.log(formulario)
 formulario.addEventListener('submit', function(evento){
-   evento.preventDefault()
- })
+   evento.preventDefault();
+   const caixaCupom = formulario.querySelector("#cupom");
+   if(caixaCupom.value === "menos15") {
+    caixaCupom.value = "";
+    total.textContent = Number(total.textContent) - 15;
+   }
+})
 
-});
