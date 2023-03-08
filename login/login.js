@@ -15,11 +15,11 @@ loginForm.addEventListener("submit", (e) => {
   //Senha vazia e errada alerta 
 
   if(!passwordValidation(passwordInput.value, 8)){
-    alert(`Por favor, preencha a senha corretamente. Dica: a senha é de no minimo 8 digitos ;)`)
+    alert(`Por favor, preencha a senha corretamente. Dica: a senha é de no minimo 8 digitos`);
     return;
   }
   
-})
+});
 
 //função para formato correto do email
 
