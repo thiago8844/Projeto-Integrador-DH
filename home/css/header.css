@@ -332,7 +332,6 @@ nav a:hover {
   .opcoes-nav {
     gap: 24px;
   }
-
 }
 
 /* Tablets e outros dispositivos mobiles */
@@ -375,7 +374,7 @@ nav a:hover {
 
     display: flex;
     justify-content:space-between;
-
+    gap: 10px;
     padding: 1.2rem 1.6rem;
   }
   
@@ -392,7 +391,7 @@ nav a:hover {
   /* Barra de pesquisa */
   header form {
     height: 3.6rem;
-    width: calc(100vw - 16.8rem);
+    width: calc(100vw - 17.8rem);
     max-width: 91rem;
     max-width: none;
   }
