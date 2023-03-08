@@ -12,7 +12,7 @@
     <div class="container">
         
         <div class="formSignUp">
-            <form action="#">
+            <form action="#" id="formSignUp">
                 
                     <div class="logo">
                         <a href="../index.html"><img src="../carrinho/img/logo 2 degradê+texto Horizontal.svg" alt=""></a>
@@ -20,7 +20,7 @@
                 
                     <div class="formHeader"> 
                     <div class="title">
-                        <h1>Cadastre-se</h1>
+                        <h1>Cadastre-se | Tech Star</h1>
                     </div>
                     <div class="backButton">
                         <button><a href="../index.html">Voltar</a></button>
@@ -42,7 +42,7 @@
                     </div>
                     <div class="inputbox">
                         <label for="cellphone">Celular:</label>
-                        <input id="cellphone" type="tel" placeholder="Telefone fixo ou celular:" required>
+                        <input id="cellphone" type="tel" placeholder="Telefone fixo ou celular: *com DDD*" maxlength="11" required>
                     </div>
                     <div class="inputbox">
                         <label for="cep">CEP:</label>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="inputbox">
                         <label for="more">Complemento:</label>
-                        <input id="more" type="text" name="more" placeholder="Digite o complemento:" required>
+                        <input id="more" type="text" name="more" placeholder="Digite o complemento:">
                     </div>
                     <div class="inputbox">
                         <label for="bairro">Bairro:</label>
@@ -81,19 +81,19 @@
                         <input id="password" type="password" placeholder="Defina uma senha:" required>
                     </div>
                     <div class="inputbox">
-                        <label for="password2">Confirmação de senha:</label>
-                        <input id="password2" type="password" placeholder="Confirme sua senha" required>
+                        <label for="passwordC">Confirmação de senha:</label>
+                        <input id="passwordC" type="password" placeholder="Confirme sua senha" required>
                     </div>
                 </div>
 
                 <div class="buttonSignUp">
-                    <button><a href="#">Cadastrar</a></button>
+                    <button type="submit" onclick="return confirmaSenha()">Cadastrar</button>
                 </div>
                 
             </form>
         </div>
         
     </div>
-
+    <script src="cadastro.js"></script>
 </body>
 </html>
