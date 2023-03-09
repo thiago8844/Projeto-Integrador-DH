@@ -1,4 +1,4 @@
-.container {
+.container-home {
   max-width: 1920px;
 
   display: grid;
@@ -23,8 +23,4 @@ main {
 
 main >  * {
   box-shadow: 0 0 24px rgba(122, 122, 122, 0.267);
-}
-
-footer {
-  height: 60rem;
 }

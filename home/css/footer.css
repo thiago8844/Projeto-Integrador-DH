@@ -2,7 +2,7 @@ footer {
 
   display: grid;
   grid-template-rows: 75% 25%;
-
+  height: 60rem;
 
 }
 
