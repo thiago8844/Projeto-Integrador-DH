@@ -1,3 +1,5 @@
+'use strict'
+
 //Otimizar
 function menuHover() {
   const listaMenus = document.querySelectorAll(".menu > li");
@@ -92,7 +94,7 @@ function hamburguerMenuOficial(elAbre) {
     elAbre.addEventListener("click", mudaMenu);
     fechaMenu.addEventListener("click", mudaMenu);
     document.body.addEventListener("click", function (e) {
-      if (e.target === document.querySelector("#blur")) mudaMenu();
+      if (e.target === document.querySelector("#blur") && c === 1) mudaMenu();
     });
   }
 
@@ -132,9 +134,6 @@ function hamburguerMenuOficial(elAbre) {
     
           
           }, 10);
-
-
-
         }
 
         fechaSubMenu(subMenu); //Fecha o menu clicado
