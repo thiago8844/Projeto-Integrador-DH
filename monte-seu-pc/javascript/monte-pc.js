@@ -1,7 +1,20 @@
+'use strict'
+
+/* 
+ FAZER CADA CAIXA TER UM VALOR PRÓPRIO E CRIAR A FUNÇÃO SOMA TOTAL QUE SOMA O VALOR DE TODAS AS CAIXAS
+*/
+
+import {
+  realParaNumber,
+  numberParaReal
+} from "./moeda.js";
+
 function MontePC() {
   const menuContainer = document.querySelector(".menu_monte_pc");
+  const valorTotalEl = document.querySelector(".valor-total .total")
   const caixaProds = menuContainer.querySelector(".produtos-montepc");
   const botaoAvancar = menuContainer.querySelector(".btn-avancar");
+  
   let caixaOpcaoSelecionada;
   let valorTotal = 0;
 
@@ -45,7 +58,8 @@ function MontePC() {
 
   //Função que deixa como selected o produto clicado
   caixaProds.addEventListener("click", function (e) {
-    clicado = e.target.closest(".produto");
+    e.preventDefault();
+    const clicado = e.target.closest(".produto");
 
     if (!clicado) return;
 
@@ -55,8 +69,34 @@ function MontePC() {
     });
 
     clicado.classList.add("selected");
-    checkboxClicado = clicado.querySelector("input");
+    const checkboxClicado = clicado.querySelector("input");
     checkboxClicado.checked = "true";
+  });
+
+  //Evento no botão avancar que seleciona o elemento e leva as informações dele pra caixa dele e muda a caixa do valor total
+  botaoAvancar.addEventListener("click", function (e) {
+    if (!caixaOpcaoSelecionada) return;
+
+    //Procura o selected
+    const produto = menuContainer.querySelector(".produto.selected");
+    
+    if (!produto) 
+      return; 
+    
+    //Leva as informações para a caixa selecionada
+
+
+    //Soma o valor total
+    const somaTotal = () => {
+
+    }
+
+    //Fecha o menu
+    mudaMenuMontePC();
+
+    // const prodSelecionado = produtos.reduce((acc, prod) => {
+    //   console.log(acc);
+    // });
   });
 
   //Função que abre e fecha o menu
@@ -79,7 +119,7 @@ function MontePC() {
     }
   };
 
-  //Faz delegação de evento nos botões para abrir o menu
+  //Abre o menu
   const opcoesPecas = document.querySelector(".opcoes-pecas");
   opcoesPecas.addEventListener("click", function (e) {
     const clicado = e.target.closest(".opcao-btn");
@@ -89,24 +129,6 @@ function MontePC() {
 
     mudaMenuMontePC(clicado.dataset.tipoPeca);
     caixaOpcaoSelecionada = clicado.closest(".opcao");
-  });
-
-  //Seleciona a opção que está como selected
-  botaoAvancar.addEventListener("click", function (e) {
-    if (!caixaOpcaoSelecionada) return;
-
-    //Procura o selected
-    const produto = menuContainer.querySelector(".produto.selected");
-    console.log(produto);
-    if (produto) {
-      caixaOpcaoSelecionada.querySelector(".caixa-selecao span").innerHTML =
-        produto.querySelector("h2").innerText;
-
-      mudaMenuMontePC();
-    }
-    // const prodSelecionado = produtos.reduce((acc, prod) => {
-    //   console.log(acc);
-    // });
   });
 
   //Eventos para fechar o menu

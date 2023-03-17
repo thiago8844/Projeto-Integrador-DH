@@ -1,7 +1,7 @@
 
 main {
   width: 90%;
-  margin: 300px auto;
+  margin: 220px auto;
 
   background-color:#7a7a7a0a;
   border-radius: 8px;
@@ -164,4 +164,10 @@ main .valor-total button {
 main .valor-total button:hover {
   background-color: #a00a0afb;
   cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+  main .valor-total {
+    top: 65px;
+  }
 }

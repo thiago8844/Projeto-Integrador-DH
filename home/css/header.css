@@ -435,5 +435,8 @@ nav a:hover {
     display: none;
   }
 
+  .container-home {
+    margin-top: 60px !important;
+  }
 }
 
